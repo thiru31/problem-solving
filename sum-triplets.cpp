@@ -18,14 +18,15 @@ int main()
     int count = 0;
     for (int i = 0; i < arr.size(); i++)
     {
-        int a = arr[i];
+        // int a = arr[i];
         for (int j = i + 1; j < arr.size(); j++)
         {
-            if (a + arr[j] == tsum)
-            {
-                count++;
-            }
+            for (int k = j + 1; k < arr.size(); k++)
+                if (arr[i] + arr[k] + arr[j] == tsum)
+                {
+                    count++;
+                }
         }
     }
-    cout << "count of pairs with the targetsum is :" << count;
+    cout << "number of triplet pairs with target sum is: " << count;
 }
