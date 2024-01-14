@@ -6,8 +6,12 @@ using namespace std;
 
 int sec_large(vector<int> arr)
 {
+    int change=-1;
     sort(arr.begin(), arr.end());
-    int res = arr[arr.size() - 2];
+    int max = arr[arr.size() - 1];
+    replace(arr.begin(),arr.end(),max,change);
+    sort(arr.begin(), arr.end());
+    int res=arr[arr.size()-1];
     return res;
 }
 
