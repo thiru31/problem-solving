@@ -4,11 +4,11 @@ using namespace std;
 
 void rotation(vector<int> arr, int steps)
 {
-    for (int i = arr.size()-steps; i < arr.size(); i++)
+    for (int i = arr.size() - steps; i < arr.size(); i++)
     {
         cout << arr[i] << " ";
     }
-    for (int i = 0; i <= steps; i++)
+    for (int i = 0; i < arr.size()-steps; i++)
     {
         cout << arr[i] << " ";
     }
@@ -29,5 +29,7 @@ int main()
     int steps;
     cout << "Enter the Number of steps for rotation :";
     cin >> steps;
-    rotation(arr, steps);
+    steps = steps % arr.size();
+    // cout<<steps;
+        rotation(arr, steps);
 }
