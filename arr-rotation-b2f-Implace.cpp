@@ -14,7 +14,7 @@ void rotation(vector<int> arr, int steps)
         cout << i << " ";
     }
 }
-
+        
 int main()
 {
 
