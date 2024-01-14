@@ -7,8 +7,8 @@ using namespace std;
 void rotation(vector<int> arr, int steps)
 {
     reverse(arr.begin(), arr.end());
-    reverse(arr.begin(), arr.begin()+2);
-    reverse(arr.begin()+2, arr.end());
+    reverse(arr.begin(), arr.begin()+steps);
+    reverse(arr.begin()+steps, arr.end());
     for (auto &&i : arr)
     {
         cout << i << " ";
