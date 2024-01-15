@@ -2,6 +2,19 @@
 #include <vector>
 using namespace std;
 
+//with sum variable
+// void prefix_sum(vector<int> &arr)
+// {
+//     int sum = 0;
+//     for (int i = 0; i < arr.size(); i++)
+//     {
+//         arr[i] += sum;
+//         sum=arr[i];
+//     }
+//     for (int ele : arr)
+//         cout << ele << " ";
+// }
+
 void prefix_sum(vector<int> &arr)
 {
     for (int i = 1; i < arr.size(); i++)
