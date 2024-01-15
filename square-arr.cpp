@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <algorithm>
 using namespace std;
 
 void return_square(vector<int> &arr)
@@ -11,6 +12,9 @@ void return_square(vector<int> &arr)
         // ele*=ele;
         //Another logic for squares
     }
+    // sort(arr.begin(),arr.end(),greater<int>());
+    //above line sorts in descending order
+    sort(arr.begin(),arr.end(),less<int>());
     for (int &ele : arr)
         cout << ele << " ";
 }
