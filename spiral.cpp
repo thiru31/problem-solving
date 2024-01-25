@@ -51,7 +51,10 @@ void spiral(vector<vector<int>> &vec)
 int main()
 {
     int m, n;
-    cin >> m >> n;
+    cout<<"Enter the number of rows : ";
+    cin >> m;
+    cout<<"Enter the number of columns : ";
+    cin >> n;
 
     vector<vector<int>> vec(m, vector<int>(n));
     for (int i = 0; i < m; i++)
