@@ -30,22 +30,22 @@ void displayTaxiDetails(const Taxi& taxi) {
 }
 
 int main() {
-    // Creating Taxi-1 and adding bookings
+
     Taxi taxi1 = {"Taxi-1", 0, {{1, 1, "A", "B", 9, 10, 200}, {3, 3, "B", "C", 12, 13, 200}}};
-    // Calculating total earnings for Taxi-1
+
     for(const auto& booking : taxi1.bookings) {
         taxi1.totalEarnings += booking.amount;
     }
-    // Displaying Taxi-1 details
+
     displayTaxiDetails(taxi1);
 
-    // Creating Taxi-2 and adding bookings
+
     Taxi taxi2 = {"Taxi-2", 0, {{2, 2, "B", "D", 9, 11, 350}}};
-    // Calculating total earnings for Taxi-2
+
     for(const auto& booking : taxi2.bookings) {
         taxi2.totalEarnings += booking.amount;
     }
-    // Displaying Taxi-2 details
+
     displayTaxiDetails(taxi2);
 
     return 0;
