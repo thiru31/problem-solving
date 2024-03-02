@@ -9,11 +9,9 @@ void return_square(vector<int> &arr)
     for(int &ele:arr)
     {
         ele=pow(ele,2);
-        // ele*=ele;
-        //Another logic for squares
+
     }
-    // sort(arr.begin(),arr.end(),greater<int>());
-    //above line sorts in descending order
+    
     sort(arr.begin(),arr.end(),less<int>());
     for (int &ele : arr)
         cout << ele << " ";
