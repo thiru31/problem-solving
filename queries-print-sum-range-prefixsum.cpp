@@ -32,7 +32,6 @@ int main()
         cin >> ele;
     }
 
-    // vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
     for (int i = 1; i < size; i++)
     {
         arr[i] += arr[i - 1];
