@@ -15,7 +15,6 @@ void sort(vector<int> arr)
     }
         for (int &ele : arr)
             cout << ele << " ";
-        // cout << endl;
 }
 
 int main()
