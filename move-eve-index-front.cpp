@@ -7,7 +7,6 @@ void moveindex(vector<int> &arr);
 
 int main()
 {
-    // vector<int> arr = {1, 2, 3, 4, 5, 6};
     int size;
     cout << "Enter the size of array :";
     cin >> size;
