@@ -18,13 +18,11 @@ void check_partition(vector<int> &arr)
         {
             i++;
             sum1 += arr[i];
-            // cout << sum1;
         }
         while (sum1 > sum2)
         {
             j--;
             sum2 += arr[j];
-            // cout << sum2;
         }
     }
     if (sum1 == sum2)
