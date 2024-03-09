@@ -57,13 +57,7 @@ int main()
     cout<<"Enter the number of columns : ";
     cin >> n;
     vector<vector<int>> vec(m, vector<int>(n));
-    // for (int i = 0; i < m; i++)
-    // {
-    //     for (int j = 0; j < n; j++)
-    //     {
-    //         cin >> vec[i][j];
-    //     }
-    // }
+   
     spiral(vec);
     for (int i = 0; i < m; i++)
     {
