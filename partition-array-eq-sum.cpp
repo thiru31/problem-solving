@@ -62,6 +62,5 @@ int main()
     {
         cin >> ele;
     }
-    // vector<int> arr = {1, 2, 3, 1, 3, 4};
     check_partition(arr);
 }
